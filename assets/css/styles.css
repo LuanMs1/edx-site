@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow:column nowrap;
+    background-color: rgb(255, 238, 238);
+}
+header{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.493);
+    height: 18vh;
+    font-size:17px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    padding:30px;
+}
+
+nav a:hover{
+    background-color: rgba(226, 226, 226, 0.247);
+}
+
+header button{
+    background-color: white;
+    border-radius: 50%;
+    background-color: inherit;
+    color: rgba(0, 0, 0, 0.521);
+}
+
+header button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+main{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+h1{
+    padding: 40px;
+    padding-top:0;
+}
+.sections{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.category-image{
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+}
+
+.category-image img{
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    padding:20px;
+    color:rgb(131, 118, 118);
+    font-size:12px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.btn-primary{
+    background-color: rgb(252, 166, 223);
+}
+.active{
+    background-color: rgb(252, 166, 223)!important;
+}
+
+.btn-primary:hover{
+    background-color: rgb(211, 114, 179);
+}
+
+@media (max-width:900px){
+    
+    .sections{
+        flex-direction: column;
+        gap:10px;
+    }
+    .category-image{
+        width: 80vw;
+        height: 60vw;
+    }
+    header{
+        height: 25vh;
+    }
+}
